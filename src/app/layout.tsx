@@ -1,21 +1,8 @@
 import type { Metadata } from 'next';
-import {
-  DM_Mono,
-  DM_Serif_Display,
-  Outfit,
-  Noto_Sans,
-  Playfair_Display,
-} from 'next/font/google';
+import { DM_Mono, DM_Serif_Display, Outfit } from 'next/font/google';
 import './globals.css';
 import clsx from 'clsx';
 import { cn } from '@/lib/utils';
-
-const playfairDisplayHeading = Playfair_Display({
-  subsets: ['latin'],
-  variable: '--font-heading',
-});
-
-const notoSans = Noto_Sans({ subsets: ['latin'], variable: '--font-sans' });
 
 const dmMono = DM_Mono({
   variable: '--font-dm-mono',
@@ -58,9 +45,7 @@ export default function RootLayout({
           'h-full',
           'antialiased'
         ),
-        'font-sans',
-        notoSans.variable,
-        playfairDisplayHeading.variable
+        'font-sans'
       )}
     >
       <body className='flex min-h-full flex-col'>{children}</body>
