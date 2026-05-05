@@ -4,7 +4,7 @@ import Link from 'next/link';
 const menus = ['about', 'experience', 'projects', 'contact'];
 export default function Navbar() {
   return (
-    <div className='font-dm-mono fixed top-0 right-0 left-0 z-50 flex w-screen items-center justify-between bg-transparent px-16 py-6'>
+    <div className='font-dm-mono fixed top-0 right-0 left-0 z-40 flex w-screen items-center justify-between bg-transparent px-16 py-6'>
       {/* Nav logo */}
       <Link
         href=''

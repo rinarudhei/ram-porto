@@ -116,6 +116,20 @@ body {
   @apply bg-base-background text-ink text-sm font-normal;
 
   font-family: var(--font-dm-mono);
+  cursor: none;
+}
+
+body:has(a:hover) .cursor {
+  width: 12px;
+  height: 12px;
+  background-color: var(--rust);
+}
+
+body:has(a:hover) .cursor-ring {
+  width: 44px;
+  height: 44px;
+  border-color: var(--rust);
+  opacity: 0.3;
 }
 
 a {
