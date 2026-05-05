@@ -1,8 +1,11 @@
+import { Button } from '@/components/ui/button';
 import HeroGrid from './heroGrid';
+import { MoveDown } from 'lucide-react';
+import Link from 'next/link';
 
 export default function HeroSection() {
   return (
-    <section className='relative mx-auto max-h-300 max-w-300 px-16 pt-32 pb-24'>
+    <section className='relative mx-auto flex min-h-screen max-w-300 items-center px-16 pt-32 pb-24'>
       <div>
         {/* Hero content */}
         <div className='mb-6 flex items-center gap-3'>
@@ -30,8 +33,18 @@ export default function HeroSection() {
         </p>
 
         {/* Hero CTA */}
-        <div className='mt-12'>
-          <button>Tryme</button>
+        <div className='mt-12 flex items-center gap-6'>
+          <Button
+            asChild
+            className='transition duration-200 hover:-translate-y-0.5'
+          >
+            <Link href=''>view work</Link>
+          </Button>
+          <Button asChild variant='ghost' className='m-0 p-0'>
+            <Link href=''>
+              get in touch <MoveDown />
+            </Link>
+          </Button>
         </div>
       </div>
 
