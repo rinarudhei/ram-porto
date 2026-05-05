@@ -118,6 +118,10 @@ body {
   font-family: var(--font-dm-mono);
 }
 
+a {
+  text-decoration: none;
+}
+
 .font-dm-serif-display {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -13,7 +13,7 @@ const buttonVariants = cva(
           'bg-moss text-cream hover:bg-ink text-[0.8rem] tracking-[0.1em]',
         ghost:
           'text-ink-muted hover:text-ink aria-expanded:text-ink-muted text-[0.8rem] tracking-[0.1em]',
-        link: "text-ink-muted hover:text-ink underline underline-offset-4 hover:underline font-regular text-[0.78rem] tracking-[0.08rem] relative after:content-[''] after:w-0 after:h-px after:absolute after:bottom-0 after:left-0 after:bg-moss hover:after:w-full pb-0.4",
+        link: "text-ink-muted hover:text-ink underline underline-offset-4 hover:underline font-regular text-[0.78rem] tracking-[0.08em] relative after:content-[''] after:w-0 after:h-px after:absolute after:bottom-0 after:left-0 after:bg-moss hover:after:w-full pb-0.5",
       },
       size: {
         default:
