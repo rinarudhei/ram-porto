@@ -1,12 +1,21 @@
 import type { Metadata } from 'next';
-import { DM_Mono, DM_Serif_Display, Outfit, Noto_Sans, Playfair_Display } from 'next/font/google';
+import {
+  DM_Mono,
+  DM_Serif_Display,
+  Outfit,
+  Noto_Sans,
+  Playfair_Display,
+} from 'next/font/google';
 import './globals.css';
 import clsx from 'clsx';
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
-const playfairDisplayHeading = Playfair_Display({subsets:['latin'],variable:'--font-heading'});
+const playfairDisplayHeading = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-heading',
+});
 
-const notoSans = Noto_Sans({subsets:['latin'],variable:'--font-sans'});
+const notoSans = Noto_Sans({ subsets: ['latin'], variable: '--font-sans' });
 
 const dmMono = DM_Mono({
   variable: '--font-dm-mono',
@@ -23,7 +32,7 @@ const dmSerifDisplay = DM_Serif_Display({
 
 const outfit = Outfit({
   variable: '--font-outfit',
-  weight: ['300', '400'],
+  weight: ['300', '400', '500'],
   subsets: ['latin'],
   style: ['normal'],
 });
@@ -41,15 +50,20 @@ export default function RootLayout({
   return (
     <html
       lang='en'
-      className={cn(clsx(
-              dmSerifDisplay.variable,
-              dmMono.variable,
-              outfit.variable,
-              'h-full',
-              'antialiased'
-            ), "font-sans", notoSans.variable, playfairDisplayHeading.variable)}
+      className={cn(
+        clsx(
+          dmSerifDisplay.variable,
+          dmMono.variable,
+          outfit.variable,
+          'h-full',
+          'antialiased'
+        ),
+        'font-sans',
+        notoSans.variable,
+        playfairDisplayHeading.variable
+      )}
     >
-      <body className='min-h-full flex flex-col'>{children}</body>
+      <body className='flex min-h-full flex-col'>{children}</body>
     </html>
   );
 }
