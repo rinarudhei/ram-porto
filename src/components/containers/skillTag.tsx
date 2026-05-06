@@ -16,7 +16,11 @@ type SkillsCatLabelProps = {
   label: string;
 };
 export function SkillsCatLabel({ label }: SkillsCatLabelProps) {
-  return <div>{label}</div>;
+  return (
+    <div className='text-ink-faint pt-0.75 text-[0.7rem] tracking-widest'>
+      {label}
+    </div>
+  );
 }
 
 export function SkillsTags({ children }: PropsWithChildren) {
