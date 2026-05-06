@@ -45,6 +45,10 @@ export default function ProjectsSection() {
           />
         ))}
       </div>
+
+      <p className="font-dm-mono text-ink-faint after:bg-moss-light before:bg-moss-light mt-10 flex items-center justify-center gap-4 text-center text-[0.78rem] tracking-[0.06em] before:h-px before:w-12 before:shrink-0 before:content-[''] after:h-px after:w-12 after:shrink-0 after:content-['']">
+        more coming — I like to build things
+      </p>
     </section>
   );
 }
