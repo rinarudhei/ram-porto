@@ -1,8 +1,14 @@
 import { SectionLabel, SectionTitle } from '@/components/containers/sections';
+import {
+  SkillsCatLabel,
+  SkillsTags,
+  SkillTag,
+} from '@/components/containers/skillTag';
+import React from 'react';
 
 export default function AboutAndSkillsSection() {
   return (
-    <section className='mx-auto grid max-w-300 grid-cols-[1fr_1.2fr] items-center gap-24 px-16 py-24'>
+    <section className='mx-auto grid max-w-300 grid-cols-[1fr_1.2fr] items-start gap-24 px-16 py-24'>
       <AboutSection />
       <SkillsSection />
     </section>
@@ -40,6 +46,40 @@ function AboutSection() {
   );
 }
 
+const skills = [
+  { category: 'backend', skills: ['Go', 'Node.js'] },
+  {
+    category: 'frontend',
+    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'ShadCN'],
+  },
+  {
+    category: 'interests',
+    skills: ['CLI tools', 'System design', 'TUI', 'APIs'],
+  },
+];
+
 function SkillsSection() {
-  return <div></div>;
+  return (
+    <div>
+      <SectionLabel label='skills' />
+
+      <div className='mt-10'>
+        {skills.map((s) => (
+          <div
+            key={s.category}
+            className='grid grid-cols-[100px_1fr] gap-4 border-t border-[rgba(61,90,71,0.12)] py-4 last:border-b'
+          >
+            <SkillsCatLabel label={s.category} />
+            <SkillsTags>
+              {s.skills.map((skill) => (
+                <React.Fragment key={skill}>
+                  <SkillTag skill={skill} />
+                </React.Fragment>
+              ))}
+            </SkillsTags>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
