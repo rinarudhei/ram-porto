@@ -132,10 +132,6 @@ body:has(a:hover) .cursor-ring {
   opacity: 0.3;
 }
 
-a {
-  text-decoration: none;
-}
-
 .font-dm-serif-display {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

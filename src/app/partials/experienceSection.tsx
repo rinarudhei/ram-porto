@@ -1,4 +1,5 @@
 import { SectionLabel, SectionTitle } from '@/components/containers/sections';
+import clsx from 'clsx';
 import React from 'react';
 
 const experiences = [
@@ -45,11 +46,16 @@ export default function ExperienceSection() {
     <section className='mx-auto max-w-300 items-start gap-24 border-t border-[rgba(61,90,71,0.1)] px-16 py-24'>
       <SectionLabel label='work history' />
       <SectionTitle title="Where I've" em='been' />
+
+      {/* Experiences */}
       <div className='mt-12 flex flex-col'>
         {experiences.map((ex) => (
           <div
             key={ex.time}
-            className='relative grid grid-cols-[180px_1fr] gap-8 border-b border-[rgba(61,90,71,0.1)] py-10'
+            className={clsx(
+              'relative grid grid-cols-[180px_1fr] gap-8 border-b border-[rgba(61,90,71,0.1)] py-10',
+              "before:absolute before:top-0 before:bottom-0 before:-left-16 before:bg-[rgba(61,90,71,0.04)] before:content-[''] hover:before:w-[calc(100%+8rem)]"
+            )}
           >
             <div className='text-ink-faint font-dm-mono pt-1 text-[0.75rem] tracking-wider'>
               {ex.time}

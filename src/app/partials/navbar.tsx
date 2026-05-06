@@ -18,7 +18,12 @@ export default function Navbar() {
       <ul className='flex gap-10'>
         {menus.map((m) => (
           <li key={m}>
-            <Button asChild variant='link' size='link' className='font-dm-mono'>
+            <Button
+              asChild
+              variant='link'
+              size='link'
+              className='font-dm-mono no-underline decoration-0'
+            >
               <Link href=''>{m}</Link>
             </Button>
           </li>

@@ -3,6 +3,7 @@ import AboutAndSkillsSection from './partials/aboutAndSkillsSection';
 import ExperienceSection from './partials/experienceSection';
 import HeroSection from './partials/heroSection';
 import Navbar from './partials/navbar';
+import ProjectsSection from './partials/projects';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <HeroSection />
         <AboutAndSkillsSection />
         <ExperienceSection />
+        <ProjectsSection />
       </main>
     </div>
   );
