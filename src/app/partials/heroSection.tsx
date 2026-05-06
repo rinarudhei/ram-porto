@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import HeroGrid from './heroGrid';
+import HeroGrid from '../../components/containers/heroGrid';
 import { MoveDown } from 'lucide-react';
 import Link from 'next/link';
 
