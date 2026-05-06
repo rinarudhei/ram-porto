@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 export default function CustomCursor() {
   const [pos, setPos] = useState({ x: 0, y: 0 });
 
+  // handle mouse event to update cursor position state
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       setPos({ x: e.clientX, y: e.clientY });
@@ -18,6 +19,7 @@ export default function CustomCursor() {
       globalThis.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
+
   return (
     <>
       <div
