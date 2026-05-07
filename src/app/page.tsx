@@ -1,5 +1,6 @@
 import CustomCursor from '../components/containers/customCursor';
 import AboutAndSkillsSection from './partials/aboutAndSkillsSection';
+import ContactSection from './partials/contactSection';
 import ExperienceSection from './partials/experienceSection';
 import HeroSection from './partials/heroSection';
 import Navbar from './partials/navbar';
@@ -17,6 +18,7 @@ export default function Home() {
         <AboutAndSkillsSection />
         <ExperienceSection />
         <ProjectsSection />
+        <ContactSection />
       </main>
     </div>
   );
