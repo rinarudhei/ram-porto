@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function ContactSection() {
   return (
-    <section className='border-[rgba(61,90,71,0.1) flex min-h-[60vh] flex-col items-center justify-center border-t text-center'>
+    <section className='mx-auto flex min-h-[60vh] max-w-300 flex-col items-center justify-center border-t border-[rgba(61,90,71,0.1)] text-center'>
       <div>
         <h2
           style={{
