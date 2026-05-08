@@ -30,6 +30,7 @@ export default function ProjectCard({
           {tag}
         </p>
         <Link
+          target='_blank'
           href={url}
           className='font-dm-mono text-moss decoration-moss/30 relative z-10 cursor-pointer text-[0.7rem] tracking-[0.08em] underline decoration-1 underline-offset-4 group-hover:text-[rgba(253,250,244,0.8)] group-hover:decoration-[rgba(253,250,244,0.6)]'
         >

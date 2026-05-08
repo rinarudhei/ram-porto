@@ -1,6 +1,6 @@
 'use client';
-import { motion, useInView } from 'motion/react';
-import { PropsWithChildren, useEffect, useRef } from 'react';
+import { motion } from 'motion/react';
+import { PropsWithChildren } from 'react';
 
 type MotionWrapperProps = {
   className?: string;
