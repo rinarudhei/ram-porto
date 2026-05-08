@@ -1,6 +1,6 @@
 'use client';
-import { motion } from 'motion/react';
-import { PropsWithChildren } from 'react';
+import { motion, useInView } from 'motion/react';
+import { PropsWithChildren, useEffect, useRef } from 'react';
 
 type MotionWrapperProps = {
   className?: string;
@@ -15,9 +15,9 @@ export default function MotionWrapper({
   return (
     <motion.section
       viewport={{ once: true }}
-      initial={{ opacity: 0, translateY: '32px' }}
-      transition={{ duration: 0.5, ease: 'easeIn', delay }}
-      whileInView={{ opacity: 1, translateY: 0 }}
+      initial={{ opacity: 0, y: 32 }}
+      transition={{ duration: 0.5, ease: 'easeOut', delay }}
+      whileInView={{ opacity: 1, y: 0 }}
       className={className}
     >
       {children}

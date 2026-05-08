@@ -1,15 +1,14 @@
 import MotionWrapper from '@/components/containers/motionWrapper';
 import { SectionLabel, SectionTitle } from '@/components/containers/sections';
-import {
-  SkillsCatLabel,
-  SkillsTags,
-  SkillTag,
-} from '@/components/containers/skillTag';
-import React from 'react';
+import { SkillTag } from '@/components/containers/skillTag';
+import React, { PropsWithChildren } from 'react';
 
 export default function AboutAndSkillsSection() {
   return (
-    <section className='mx-auto grid max-w-300 grid-cols-[1fr_1.2fr] items-start gap-24 px-16 py-24'>
+    <section
+      id='about'
+      className='mx-auto grid max-w-300 grid-cols-[1fr_1.2fr] items-start gap-24 px-16 py-24'
+    >
       <AboutSection />
       <SkillsSection />
     </section>
@@ -83,4 +82,19 @@ function SkillsSection() {
       </div>
     </MotionWrapper>
   );
+}
+
+type SkillsCatLabelProps = {
+  label: string;
+};
+export function SkillsCatLabel({ label }: SkillsCatLabelProps) {
+  return (
+    <div className='text-ink-faint pt-0.75 text-[0.7rem] tracking-widest'>
+      {label}
+    </div>
+  );
+}
+
+export function SkillsTags({ children }: PropsWithChildren) {
+  return <div className='flex flex-wrap gap-2'>{children}</div>;
 }

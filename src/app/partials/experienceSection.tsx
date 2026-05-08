@@ -44,7 +44,10 @@ const experiences = [
 
 export default function ExperienceSection() {
   return (
-    <section className='mx-auto max-w-300 items-start gap-24 border-t border-[rgba(61,90,71,0.1)] px-16 py-24'>
+    <section
+      id='experience'
+      className='experience mx-auto max-w-300 items-start gap-24 border-t border-[rgba(61,90,71,0.1)] px-16 py-24'
+    >
       <MotionWrapper>
         <SectionLabel label='work history' />
         <SectionTitle title="Where I've" em='been' />

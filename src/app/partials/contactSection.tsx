@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function ContactSection() {
   return (
     <MotionWrapper className='mx-auto flex min-h-[60vh] max-w-300 flex-col items-center justify-center border-t border-[rgba(61,90,71,0.1)] text-center'>
-      <div>
+      <div id='contact'>
         <h2
           style={{
             fontSize: 'clamp(2.5rem, 6vw, 5rem)',

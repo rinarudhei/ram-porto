@@ -9,27 +9,40 @@ const projects = [
     title: 'My Portofolio',
     desc: 'My portofolio website. Designed by claude.ai, coded by human, built with Next.js.',
     tag: 'landing-page',
+    url: '',
   },
   {
     title: 'Rock, Scissor, Paper',
     desc: 'A classic game, rebuilt. Because even simple ideas deserve to be executed well.',
     tag: 'game',
+    url: 'https://suten-omega.vercel.app',
   },
   {
     title: 'Sociality',
     desc: 'A social media app in the spirit of instagram. Built to understand what it takes to engineer social systems — feeds, follow, media uploads.',
     tag: 'full-stack',
+    url: 'https://sociality-beta.vercel.app',
   },
   {
     title: 'pom-cli',
     desc: 'A Pomodoro timer that lives in your terminal. Built with Go. Because the best tools stay out of your way.',
     tag: 'Go · TUI · CLI',
+    url: 'https://github.com/rinarudhei/pomcli',
+  },
+  {
+    title: 'godict-cli',
+    desc: 'English Dictionary with pronounciation sound.',
+    tag: 'Go · CLI',
+    url: 'https://github.com/rinarudhei/godict-cli',
   },
 ];
 
 export default function ProjectsSection() {
   return (
-    <section className='mx-auto max-w-300 items-start gap-24 border-t border-[rgba(61,90,71,0.1)] px-16 py-24'>
+    <section
+      id='projects'
+      className='mx-auto max-w-300 items-start gap-24 border-t border-[rgba(61,90,71,0.1)] px-16 py-24'
+    >
       <MotionWrapper>
         <SectionLabel label='selected works' />
         <SectionTitle title="Things I've" em='built' />
@@ -44,7 +57,7 @@ export default function ProjectsSection() {
             desc={p.desc}
             tag={p.tag}
             cardNumber={indexToNumberString(i + 1)}
-            url=''
+            url={p.url}
           />
         ))}
       </MotionWrapper>

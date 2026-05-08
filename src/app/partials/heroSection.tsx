@@ -2,9 +2,7 @@
 import { Button } from '@/components/ui/button';
 import HeroGrid from '../../components/containers/heroGrid';
 import { MoveDown } from 'lucide-react';
-import Link from 'next/link';
-import { easeIn, motion } from 'motion/react';
-import { section } from 'motion/react-client';
+import { motion, useInView } from 'motion/react';
 
 export default function HeroSection() {
   return (
@@ -12,8 +10,9 @@ export default function HeroSection() {
       <div>
         {/* Hero content */}
         <motion.div
+          viewport={{ once: true }}
           initial={{ opacity: 0, y: 16 }}
-          transition={{ duration: 0.4, ease: easeIn }}
+          transition={{ duration: 0.4, ease: 'easeOut' }}
           animate={{ opacity: 1, y: 0 }}
           className='mb-6 flex items-center gap-3'
         >
@@ -24,8 +23,9 @@ export default function HeroSection() {
         </motion.div>
 
         <motion.h1
+          viewport={{ once: true }}
           initial={{ opacity: 0, y: 16 }}
-          transition={{ duration: 0.4, ease: easeIn, delay: 0.2 }}
+          transition={{ duration: 0.4, ease: 'easeOut', delay: 0.2 }}
           animate={{ opacity: 1, y: 0 }}
           className='font-dm-serif-display text-ink leading-none tracking-tight'
           style={{
@@ -39,8 +39,9 @@ export default function HeroSection() {
         </motion.h1>
 
         <motion.p
+          viewport={{ once: true }}
           initial={{ opacity: 0, y: 16 }}
-          transition={{ duration: 0.4, ease: easeIn, delay: 0.4 }}
+          transition={{ duration: 0.4, ease: 'easeOut', delay: 0.4 }}
           animate={{ opacity: 1, y: 0 }}
           className='text-ink-muted font-outfit mt-8 max-w-120 text-[17.6px] leading-7 font-light'
         >
@@ -50,8 +51,9 @@ export default function HeroSection() {
 
         {/* Hero CTA */}
         <motion.div
+          viewport={{ once: true }}
           initial={{ opacity: 0, y: 16 }}
-          transition={{ duration: 0.4, ease: easeIn, delay: 0.6 }}
+          transition={{ duration: 0.4, ease: 'easeOut', delay: 0.6 }}
           animate={{ opacity: 1, y: 0 }}
           className='mt-12 flex items-center gap-6'
         >
@@ -59,20 +61,21 @@ export default function HeroSection() {
             asChild
             className='transition duration-200 hover:-translate-y-0.5'
           >
-            <Link href=''>view work</Link>
+            <a href='#projects'>view work</a>
           </Button>
           <Button asChild variant='ghost' className='m-0 p-0'>
-            <Link href=''>
+            <a href='#contact'>
               get in touch <MoveDown />
-            </Link>
+            </a>
           </Button>
         </motion.div>
       </div>
 
       {/* Hero grid */}
       <motion.div
+        viewport={{ once: true }}
         initial={{ opacity: 0 }}
-        transition={{ duration: 0.4, ease: easeIn, delay: 0.8 }}
+        transition={{ duration: 0.4, ease: 'easeOut', delay: 0.8 }}
         animate={{ opacity: 0.18 }}
         className='absolute top-[50%] right-16 translate-y-[-50%] opacity-18'
       >

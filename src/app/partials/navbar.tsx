@@ -9,7 +9,7 @@ export default function Navbar() {
     <NavWrapper>
       {/* Nav logo */}
       <Link
-        href=''
+        href='/'
         className='font-dm-mono font-regular text-ink-muted cursor-none text-[0.85rem] tracking-wider'
       >
         RAM<span className='text-moss'>.</span>
@@ -24,7 +24,7 @@ export default function Navbar() {
               size='link'
               className='font-dm-mono no-underline decoration-0 after:transition-[width] after:delay-300 after:ease-in-out motion-reduce:after:transition-none'
             >
-              <Link href=''>{m}</Link>
+              <a href={`#${m}`}>{m}</a>
             </Button>
           </li>
         ))}

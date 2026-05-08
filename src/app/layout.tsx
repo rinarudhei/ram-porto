@@ -3,6 +3,7 @@ import { DM_Mono, DM_Serif_Display, Outfit } from 'next/font/google';
 import './globals.css';
 import clsx from 'clsx';
 import { cn } from '@/lib/utils';
+import CustomCursor from '@/components/containers/customCursor';
 
 const dmMono = DM_Mono({
   variable: '--font-dm-mono',
@@ -25,10 +26,27 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: 'Rinaldi Adrian - Portofolio',
-  description: "Rinaldi Adrian's Portofolio Website",
+  title: 'Rinaldi Adrian',
+  description: 'Software engineer portofolio',
   icons: {
     icon: '/icons/favicon.svg',
+  },
+  openGraph: {
+    title: 'Rinaldi Adrian',
+    description: 'Software engineer portofolio',
+    url: '',
+    images: [
+      {
+        url: '/images/OG.png',
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/images/OG.png'],
   },
 };
 
@@ -46,12 +64,16 @@ export default function RootLayout({
           dmMono.variable,
           outfit.variable,
           'h-full',
-          'antialiased'
-        ),
-        'font-sans'
+          'antialiased',
+          'font-sans',
+          'scroll-smooth'
+        )
       )}
     >
-      <body className='flex min-h-full flex-col'>{children}</body>
+      <body className='flex min-h-full flex-col'>
+        <CustomCursor />
+        {children}
+      </body>
     </html>
   );
 }
