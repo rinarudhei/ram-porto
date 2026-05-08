@@ -22,7 +22,7 @@ export default function Navbar() {
               asChild
               variant='link'
               size='link'
-              className='font-dm-mono no-underline decoration-0'
+              className='font-dm-mono no-underline decoration-0 after:transition-[width] after:delay-300 after:ease-in-out motion-reduce:after:transition-none'
             >
               <Link href=''>{m}</Link>
             </Button>

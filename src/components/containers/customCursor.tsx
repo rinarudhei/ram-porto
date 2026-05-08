@@ -27,7 +27,7 @@ export default function CustomCursor() {
           top: pos.y,
         }}
         className={clsx(
-          'border-moss cursor-ring pointer-events-none fixed z-49 h-8 w-8 -translate-1/2 rounded-[50%] border opacity-50 transition-all ease-in-out'
+          'border-moss cursor-ring pointer-events-none fixed z-49 h-8 w-8 -translate-1/2 rounded-[50%] border opacity-50 transition-all ease-in-out motion-reduce:transition-none'
         )}
       />
       <div
