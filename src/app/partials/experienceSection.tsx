@@ -1,3 +1,4 @@
+import MotionWrapper from '@/components/containers/motionWrapper';
 import { SectionLabel, SectionTitle } from '@/components/containers/sections';
 import clsx from 'clsx';
 import React from 'react';
@@ -44,13 +45,15 @@ const experiences = [
 export default function ExperienceSection() {
   return (
     <section className='mx-auto max-w-300 items-start gap-24 border-t border-[rgba(61,90,71,0.1)] px-16 py-24'>
-      <SectionLabel label='work history' />
-      <SectionTitle title="Where I've" em='been' />
+      <MotionWrapper>
+        <SectionLabel label='work history' />
+        <SectionTitle title="Where I've" em='been' />
+      </MotionWrapper>
 
       {/* Experiences */}
       <div className='mt-12 flex flex-col'>
         {experiences.map((ex) => (
-          <div
+          <MotionWrapper
             key={ex.time}
             className={clsx(
               'relative grid grid-cols-[180px_1fr] gap-8 border-b border-[rgba(61,90,71,0.1)] py-10',
@@ -71,7 +74,7 @@ export default function ExperienceSection() {
                 {ex.detail.description}
               </p>
             </div>
-          </div>
+          </MotionWrapper>
         ))}
       </div>
     </section>

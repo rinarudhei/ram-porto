@@ -1,3 +1,4 @@
+import MotionWrapper from '@/components/containers/motionWrapper';
 import { SectionLabel, SectionTitle } from '@/components/containers/sections';
 import {
   SkillsCatLabel,
@@ -17,7 +18,7 @@ export default function AboutAndSkillsSection() {
 
 function AboutSection() {
   return (
-    <div>
+    <MotionWrapper>
       <SectionLabel label='about me' />
       <SectionTitle title='Builder by' em='instict' />
       <div className='text-ink-muted font-outfit text-base leading-[1.85] font-light'>
@@ -42,7 +43,7 @@ function AboutSection() {
           side — because I like building things.
         </p>
       </div>
-    </div>
+    </MotionWrapper>
   );
 }
 
@@ -60,7 +61,7 @@ const skills = [
 
 function SkillsSection() {
   return (
-    <div>
+    <MotionWrapper delay={0.2}>
       <SectionLabel label='skills' />
 
       <div className='mt-10'>
@@ -80,6 +81,6 @@ function SkillsSection() {
           </div>
         ))}
       </div>
-    </div>
+    </MotionWrapper>
   );
 }
