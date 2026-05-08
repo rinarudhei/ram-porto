@@ -54,7 +54,7 @@ export default function ExperienceSection() {
             key={ex.time}
             className={clsx(
               'relative grid grid-cols-[180px_1fr] gap-8 border-b border-[rgba(61,90,71,0.1)] py-10',
-              "before:absolute before:top-0 before:bottom-0 before:-left-16 before:bg-[rgba(61,90,71,0.04)] before:transition-[width] before:delay-300 before:ease-in-out before:content-[''] hover:before:w-[calc(100%+8rem)] motion-reduce:before:transition-none"
+              "before:absolute before:top-0 before:bottom-0 before:-left-16 before:w-0 before:bg-[rgba(61,90,71,0.04)] before:transition-[width] before:duration-300 before:ease-in-out before:content-[''] hover:before:w-[calc(100%+8rem)] motion-reduce:before:transition-none"
             )}
           >
             <div className='text-ink-faint font-dm-mono pt-1 text-[0.75rem] tracking-wider'>

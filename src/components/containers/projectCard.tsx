@@ -15,7 +15,7 @@ export default function ProjectCard({
   url,
 }: ProjectCardProps) {
   return (
-    <div className='bg-sand after:bg-moss group relative flex min-h-70 cursor-none flex-col justify-between overflow-hidden px-8 py-10 after:absolute after:right-0 after:bottom-0 after:left-0 hover:after:h-full'>
+    <div className='bg-sand after:bg-moss group relative flex min-h-70 cursor-none flex-col justify-between overflow-hidden px-8 py-10 after:absolute after:right-0 after:bottom-0 after:left-0 after:h-0 after:transition-[height] after:duration-300 after:ease-in-out hover:after:h-full motion-reduce:after:transition-none'>
       <p className='font-dm-mono text-ink-faint relative z-10 mb-6 text-[0.7rem] tracking-[0.15em] group-hover:text-[rgba(253,250,244,0.9)]'>
         {cardNumber}
       </p>
@@ -31,7 +31,7 @@ export default function ProjectCard({
         </p>
         <Link
           href={url}
-          className='font-dm-mono text-moss decoration-moss/30 relative z-10 text-[0.7rem] tracking-[0.08em] underline decoration-1 underline-offset-4 group-hover:text-[rgba(253,250,244,0.8)] group-hover:decoration-[rgba(253,250,244,0.6)]'
+          className='font-dm-mono text-moss decoration-moss/30 relative z-10 cursor-pointer text-[0.7rem] tracking-[0.08em] underline decoration-1 underline-offset-4 group-hover:text-[rgba(253,250,244,0.8)] group-hover:decoration-[rgba(253,250,244,0.6)]'
         >
           view →
         </Link>

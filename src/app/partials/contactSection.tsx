@@ -20,7 +20,7 @@ export default function ContactSection() {
         </p>
         <Link
           href='mailto:rinaldiadrian5@gmail.com'
-          className='font-dm-serif-display text-ink decoration-moss-light hover:text-moss hover:decoration-moss pb-1 text-[1.5rem] italic underline decoration-2 underline-offset-10'
+          className='font-dm-serif-display text-ink decoration-moss-light hover:text-moss hover:decoration-moss contact-link pb-1 text-[1.5rem] italic !underline decoration-2 underline-offset-10'
         >
           rinaldiadrian5@gmail.com
         </Link>
