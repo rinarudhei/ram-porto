@@ -7,7 +7,7 @@ export default function AboutAndSkillsSection() {
   return (
     <section
       id='about'
-      className='mx-auto flex max-w-300 flex-col items-start gap-24 px-8 py-16 sm:grid sm:grid-cols-[1fr_1.2fr] sm:px-16 sm:py-24'
+      className='mx-auto flex max-w-300 flex-col items-start gap-24 px-8 py-16 sm:grid sm:grid-cols-[1.2fr_1fr] sm:px-16 sm:py-24 lg:grid-cols-[1fr_1.2fr]'
     >
       <AboutSection />
       <SkillsSection />
@@ -20,7 +20,7 @@ function AboutSection() {
     <MotionWrapper>
       <SectionLabel label='about me' />
       <SectionTitle title='Builder by' em='instict' />
-      <div className='text-ink-muted font-outfit text-base leading-[1.85] font-light'>
+      <div className='text-ink-muted font-outfit mt-12 text-base leading-[1.85] font-light sm:mt-0'>
         <p>
           Software engineer with a background that spans automotive engineering
           at <strong className='text-ink font-medium'>Subaru Japan</strong> to
