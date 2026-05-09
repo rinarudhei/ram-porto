@@ -1,8 +1,8 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import NavWrapper from './navWrapper';
-
-const menus = ['about', 'experience', 'projects', 'contact'];
+import { menus } from '@/lib/constants';
+import { MenuPopover } from '@/components/ui/menuPopover';
 
 export default function Navbar() {
   return (
@@ -29,6 +29,7 @@ export default function Navbar() {
           </li>
         ))}
       </ul>
+      <MenuPopover />
     </NavWrapper>
   );
 }
