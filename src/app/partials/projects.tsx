@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: 'godict-cli',
-    desc: 'English Dictionary with pronounciation sound.',
+    desc: 'Lightweight English dictionary command-line application with audio pronunciation.',
     tag: 'Go · CLI',
     url: 'https://github.com/rinarudhei/godict-cli',
   },
