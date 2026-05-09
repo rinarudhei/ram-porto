@@ -1,46 +1,7 @@
 import MotionWrapper from '@/components/containers/motionWrapper';
 import { SectionLabel, SectionTitle } from '@/components/containers/sections';
+import { experiences } from '@/lib/constants';
 import clsx from 'clsx';
-import React from 'react';
-
-const experiences = [
-  {
-    time: '2022 — present',
-    detail: {
-      title: 'Software Engineer',
-      company: 'Accenture',
-      description:
-        'Building and maitaining software systems for enterprise clients. Working accross backend services, APIs, and full-stack solustions at scale.',
-    },
-  },
-  {
-    time: '2021 — 2022',
-    detail: {
-      title: 'Backend Developer',
-      company: 'Telkom Indonesia',
-      description:
-        "Worked on backend services for one of Indonesia's largest telecommunications companies. Built robust APIs and data pipelines.",
-    },
-  },
-  {
-    time: '2021',
-    detail: {
-      title: 'Fullstack Engineer',
-      company: 'Feedloop',
-      description:
-        'Early-staged startup work. Owned the backend while contributing to the frontend when needed.',
-    },
-  },
-  {
-    time: '2016 — 2020',
-    detail: {
-      title: 'ADAS Engineer',
-      company: 'Subaru Japan',
-      description:
-        'Advanced Driver Assistance Systems Engineering. Working on safety-critical embedded software taught me what precision in engineering really means.',
-    },
-  },
-];
 
 export default function ExperienceSection() {
   return (

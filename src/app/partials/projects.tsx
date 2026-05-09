@@ -1,41 +1,8 @@
 import MotionWrapper from '@/components/containers/motionWrapper';
 import ProjectCard from '@/components/containers/projectCard';
 import { SectionLabel, SectionTitle } from '@/components/containers/sections';
+import { projects } from '@/lib/constants';
 import { indexToNumberString } from '@/lib/utils';
-import { title } from 'process';
-
-const projects = [
-  {
-    title: 'My Portofolio',
-    desc: 'My portofolio website. Designed by claude.ai, coded by human, built with Next.js.',
-    tag: 'landing-page',
-    url: '',
-  },
-  {
-    title: 'Rock, Scissor, Paper',
-    desc: 'A classic game, rebuilt. Because even simple ideas deserve to be executed well.',
-    tag: 'game',
-    url: 'https://suten-omega.vercel.app',
-  },
-  {
-    title: 'Sociality',
-    desc: 'A social media app in the spirit of instagram. Built to understand what it takes to engineer social systems — feeds, follow, media uploads.',
-    tag: 'full-stack',
-    url: 'https://sociality-beta.vercel.app',
-  },
-  {
-    title: 'pom-cli',
-    desc: 'A Pomodoro timer that lives in your terminal. Built with Go. Because the best tools stay out of your way.',
-    tag: 'Go · TUI · CLI',
-    url: 'https://github.com/rinarudhei/pomcli',
-  },
-  {
-    title: 'godict-cli',
-    desc: 'Lightweight English dictionary command-line application with audio pronunciation.',
-    tag: 'Go · CLI',
-    url: 'https://github.com/rinarudhei/godict-cli',
-  },
-];
 
 export default function ProjectsSection() {
   return (
