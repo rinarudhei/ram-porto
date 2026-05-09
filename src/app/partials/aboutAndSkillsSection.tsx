@@ -7,7 +7,7 @@ export default function AboutAndSkillsSection() {
   return (
     <section
       id='about'
-      className='mx-auto grid max-w-300 grid-cols-[1fr_1.2fr] items-start gap-24 px-16 py-24'
+      className='mx-auto flex max-w-300 flex-col items-start gap-24 px-8 py-16 sm:grid sm:grid-cols-[1fr_1.2fr] sm:px-16 sm:py-24'
     >
       <AboutSection />
       <SkillsSection />

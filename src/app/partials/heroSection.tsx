@@ -6,7 +6,7 @@ import { motion, useInView } from 'motion/react';
 
 export default function HeroSection() {
   return (
-    <section className='relative mx-auto flex min-h-screen max-w-300 items-center px-16 pt-32 pb-24'>
+    <section className='relative mx-auto flex min-h-screen max-w-300 items-center px-8 pt-24 pb-16 sm:px-16 sm:pt-32 sm:pb-24'>
       <div>
         {/* Hero content */}
         <motion.div
@@ -29,7 +29,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           className='font-dm-serif-display text-ink leading-none tracking-tight'
           style={{
-            fontSize: 'clamp(3.5rem, 8vw, 7rem)',
+            fontSize: 'clamp(3rem, 8vw, 7rem)',
           }}
         >
           Rinaldi <br />

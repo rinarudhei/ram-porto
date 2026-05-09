@@ -26,7 +26,7 @@ export default function NavWrapper({ children }: React.PropsWithChildren) {
   return (
     <div
       className={clsx(
-        'font-dm-mono fixed top-0 right-0 left-0 z-40 flex w-screen items-center justify-between bg-transparent px-16 py-6',
+        'font-dm-mono fixed top-0 right-0 left-0 z-40 flex w-screen items-center justify-between bg-transparent px-4 py-6 sm:px-16',
         scrolled && 'border-b bg-[rgba(253,250,244,0.9)] backdrop-blur-md'
       )}
     >

@@ -15,7 +15,7 @@ export default function Navbar() {
         RAM<span className='text-moss'>.</span>
       </Link>
       {/* Nav menus */}
-      <ul className='flex gap-10'>
+      <ul className='hidden sm:flex sm:gap-10'>
         {menus.map((m) => (
           <li key={m}>
             <Button

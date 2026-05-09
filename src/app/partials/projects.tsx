@@ -41,7 +41,7 @@ export default function ProjectsSection() {
   return (
     <section
       id='projects'
-      className='mx-auto max-w-300 items-start gap-24 border-t border-[rgba(61,90,71,0.1)] px-16 py-24'
+      className='mx-auto max-w-300 items-start gap-24 border-t border-[rgba(61,90,71,0.1)] px-8 py-16 sm:px-16 sm:py-24'
     >
       <MotionWrapper>
         <SectionLabel label='selected works' />
@@ -49,7 +49,7 @@ export default function ProjectsSection() {
       </MotionWrapper>
 
       {/* Projects grid */}
-      <MotionWrapper className='mt-12 grid grid-cols-[repeat(3,1fr)] gap-0.5'>
+      <MotionWrapper className='xs:grid-cols-[repeat(2,1fr)] mt-12 grid gap-0.5 sm:grid-cols-[repeat(3,1fr)]'>
         {projects.map((p, i) => (
           <ProjectCard
             key={p.title}

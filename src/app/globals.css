@@ -3,6 +3,7 @@
 @import 'shadcn/tailwind.css';
 
 @theme inline {
+  --breakpoint-xs: 30rem;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-dm-mono: 'DM Mono', monospace;
