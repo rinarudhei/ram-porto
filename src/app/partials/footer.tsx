@@ -17,6 +17,7 @@ export default function Footer() {
           Github
         </Link>
         <Link
+          target='_blank'
           className='font-dm-mono text-ink-faint hover:text-moss text-[0.72rem] tracking-[0.06em] no-underline decoration-0'
           href='https://id.linkedin.com/in/rinaldi-adrian'
         >

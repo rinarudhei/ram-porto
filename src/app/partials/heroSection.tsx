@@ -45,8 +45,8 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           className='text-ink-muted font-outfit mt-8 max-w-120 text-[17.6px] leading-7 font-light'
         >
-          I build things. Backend systems, CLI tools, web apps — if it can be
-          engineered, I'm interested in building it well.
+          I build things. Web application, back end system, CLI tools — if it
+          can be engineered, I'm interested in building it well.
         </motion.p>
 
         {/* Hero CTA */}

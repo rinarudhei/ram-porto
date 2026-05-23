@@ -15,7 +15,10 @@ export default function ProjectCard({
   url,
 }: ProjectCardProps) {
   return (
-    <div className='bg-sand after:bg-moss group relative flex min-h-70 cursor-none flex-col justify-between overflow-hidden px-8 py-10 after:absolute after:right-0 after:bottom-0 after:left-0 after:h-0 after:transition-[height] after:duration-300 after:ease-in-out hover:after:h-full motion-reduce:after:transition-none'>
+    <div
+      id='project-card'
+      className='bg-sand after:bg-moss group relative flex min-h-70 cursor-default flex-col justify-between overflow-hidden px-8 py-10 after:absolute after:right-0 after:bottom-0 after:left-0 after:h-0 after:transition-[height] after:duration-300 after:ease-in-out hover:after:h-full motion-reduce:after:transition-none'
+    >
       <p className='font-dm-mono text-ink-faint relative z-10 mb-6 text-[0.7rem] tracking-[0.15em] group-hover:text-[rgba(253,250,244,0.9)]'>
         {cardNumber}
       </p>

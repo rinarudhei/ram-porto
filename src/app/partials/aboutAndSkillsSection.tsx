@@ -1,6 +1,7 @@
 import MotionWrapper from '@/components/containers/motionWrapper';
 import { SectionLabel, SectionTitle } from '@/components/containers/sections';
 import { SkillTag } from '@/components/containers/skillTag';
+import { skills } from '@/lib/constants';
 import React, { PropsWithChildren } from 'react';
 
 export default function AboutAndSkillsSection() {
@@ -45,18 +46,6 @@ function AboutSection() {
     </MotionWrapper>
   );
 }
-
-const skills = [
-  { category: 'backend', skills: ['Go', 'Node.js'] },
-  {
-    category: 'frontend',
-    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'ShadCN'],
-  },
-  {
-    category: 'interests',
-    skills: ['CLI tools', 'System design', 'TUI', 'APIs'],
-  },
-];
 
 function SkillsSection() {
   return (

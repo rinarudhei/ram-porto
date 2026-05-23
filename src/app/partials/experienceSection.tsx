@@ -7,7 +7,7 @@ export default function ExperienceSection() {
   return (
     <section
       id='experience'
-      className='experience mx-auto max-w-300 items-start gap-24 border-t border-[rgba(61,90,71,0.1)] px-8 py-16 sm:px-16 sm:py-24'
+      className='experience mx-auto max-w-300 items-start gap-24 border-t border-[rgba(61,90,71,0.1)] px-8 py-6 sm:px-16 sm:py-14'
     >
       <MotionWrapper>
         <SectionLabel label='work history' />
@@ -20,7 +20,7 @@ export default function ExperienceSection() {
           <MotionWrapper
             key={ex.time}
             className={clsx(
-              'relative flex flex-col gap-2 border-b border-[rgba(61,90,71,0.1)] not-first:py-10 first:py-0 sm:grid sm:grid-cols-[180px_1fr] sm:gap-8',
+              'relative flex flex-col gap-2 border-b border-[rgba(61,90,71,0.1)] py-10 sm:grid sm:grid-cols-[180px_1fr] sm:gap-8',
               "before:absolute before:top-0 before:bottom-0 before:-left-16 before:w-0 before:bg-[rgba(61,90,71,0.04)] before:transition-[width] before:duration-300 before:ease-in-out before:content-[''] hover:before:w-[calc(100%+8rem)] motion-reduce:before:transition-none"
             )}
           >

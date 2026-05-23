@@ -1,5 +1,24 @@
 export const menus = ['about', 'experience', 'projects', 'contact'];
 
+export const skills = [
+  { category: 'backend', skills: ['Go', 'Node.js'] },
+  {
+    category: 'frontend',
+    skills: [
+      'React',
+      'TypeScript',
+      'vite',
+      'Next.js',
+      'Tailwind CSS',
+      'ShadCN',
+    ],
+  },
+  {
+    category: 'interests',
+    skills: ['Web Development', 'CLI tools', 'System design', 'TUI', 'APIs'],
+  },
+];
+
 export const experiences = [
   {
     time: '2022 — present',
@@ -49,13 +68,13 @@ export const projects = [
   {
     title: 'Rock, Scissor, Paper',
     desc: 'A classic game, rebuilt. Because even simple ideas deserve to be executed well.',
-    tag: 'game',
+    tag: 'web-game',
     url: 'https://suten-omega.vercel.app',
   },
   {
     title: 'Sociality',
     desc: 'A social media app in the spirit of instagram. Built to understand what it takes to engineer social systems — feeds, follow, media uploads.',
-    tag: 'full-stack',
+    tag: 'social-media',
     url: 'https://sociality-beta.vercel.app',
   },
   {
